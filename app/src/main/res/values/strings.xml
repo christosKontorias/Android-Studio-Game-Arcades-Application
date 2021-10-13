@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Application</string>
+
+    <string name="facebook_app_id">216071990475773</string>
+    <string name="fb_login_protocol_scheme">fb216071990475773</string>
+
 </resources>
