@@ -1,12 +1,9 @@
 package com.example.application;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Window;
 import android.widget.Toast;
 
 import com.facebook.AccessToken;
@@ -24,7 +21,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 import java.util.Arrays;
 
-public class FacebookLogInActivity extends LoginActivity {
+public class FacebookSignInActivity extends LoginActivity {
 
     CallbackManager callbackManager;
 
@@ -77,14 +74,14 @@ public class FacebookLogInActivity extends LoginActivity {
                             updateUI(user);
                         } else {
                             // If sign in fails, display a message to the user.
-                            Toast.makeText(FacebookLogInActivity.this, ""+task.getException(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(FacebookSignInActivity.this, ""+task.getException(), Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
     }
 
     private void updateUI(FirebaseUser user) {
-        Intent intent = new Intent(FacebookLogInActivity.this, MainActivity.class);
+        Intent intent = new Intent(FacebookSignInActivity.this, MainActivity.class);
         startActivity(intent);
     }
 

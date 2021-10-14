@@ -17,8 +17,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="-41dp">
+        tools:layout_editor_absoluteX="-75dp"
+        tools:layout_editor_absoluteY="16dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -171,9 +171,8 @@
                 android:id="@+id/btnGoogle"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="16dp"
                 app:layout_constraintBottom_toBottomOf="@+id/btnFacebook"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/btnFacebook"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintHorizontal_chainStyle="packed"
@@ -185,43 +184,39 @@
                 android:id="@+id/btnFacebook"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/btnInstagram"
+                app:layout_constraintEnd_toStartOf="@+id/btnTwitter"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/btnGoogle"
                 app:layout_constraintTop_toBottomOf="@+id/txt"
-                app:layout_constraintVertical_bias="0.272"
                 app:srcCompat="@drawable/facebook_icon" />
-
-            <ImageView
-                android:id="@+id/btnInstagram"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/btnTwitter"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/btnFacebook"
-                app:layout_constraintTop_toBottomOf="@+id/txt"
-                app:layout_constraintVertical_bias="0.272"
-                app:srcCompat="@drawable/instagram_icon" />
 
             <ImageView
                 android:id="@+id/btnTwitter"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_marginStart="8dp"
-                app:layout_constraintBottom_toBottomOf="@+id/btnInstagram"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnGithub"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btnFacebook"
+                app:layout_constraintTop_toBottomOf="@+id/txt"
+                app:srcCompat="@drawable/twitter_icon" />
+
+            <ImageView
+                android:id="@+id/btnGithub"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/btnTwitter"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/btnInstagram"
-                app:layout_constraintTop_toTopOf="@+id/btnInstagram"
-                app:srcCompat="@drawable/twitter_icon" />
+                app:layout_constraintStart_toEndOf="@+id/btnTwitter"
+                app:layout_constraintTop_toTopOf="@+id/btnTwitter"
+                app:srcCompat="@drawable/github_icon" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

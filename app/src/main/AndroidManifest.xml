@@ -12,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Application">
         <activity
-            android:name=".FacebookLogInActivity"
+            android:name=".TwitterSignInActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FacebookSignInActivity"
             android:exported="true" />
         <activity
             android:name=".GoogleSignInActivity"

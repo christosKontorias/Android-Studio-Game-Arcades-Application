@@ -32,6 +32,7 @@ public class LoginActivity extends AppCompatActivity {
     FirebaseUser mUser;
     ImageView btnGoogle;
     ImageView btnFacebook;
+    ImageView btnTwitter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +50,8 @@ public class LoginActivity extends AppCompatActivity {
         mUser=mAuth.getCurrentUser();
         btnGoogle=findViewById(R.id.btnGoogle);
         btnFacebook=findViewById(R.id.btnFacebook);
+        btnTwitter=findViewById(R.id.btnTwitter);
+
 
         createNewAccount.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,7 +79,16 @@ public class LoginActivity extends AppCompatActivity {
         btnFacebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, FacebookLogInActivity.class);
+                Intent intent = new Intent(LoginActivity.this, FacebookSignInActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(intent);
+            }
+        });
+
+        btnTwitter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, TwitterSignInActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(intent);
             }
