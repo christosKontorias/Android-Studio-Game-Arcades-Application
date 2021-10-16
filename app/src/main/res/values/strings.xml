@@ -3,5 +3,22 @@
 
     <string name="facebook_app_id">216071990475773</string>
     <string name="fb_login_protocol_scheme">fb216071990475773</string>
+    
+    <string name="navigation_drawer">Menu</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="search_icon">Search Icon</string>
+    <string name="settings_icon">Settings Icon</string>
+    <string name="welcome_title">Welcome</string>
+    <string name="email">email@gmail.com</string>
+    <string name="main_page_top_middle_section_title1">Title 1</string>
+    <string name="main_page_top_middle_section_image1">Image 1</string>
+    <string name="main_page_top_middle_section_title2">Title 2</string>
+    <string name="main_page_top_middle_section_image2">Image 2</string>
+    <string name="main_page_top_middle_section_title3">Title 3</string>
+    <string name="main_page_top_middle_section_image3">Image 3</string>
+    <string name="main_page_top_middle_section_title4">Title 4</string>
+    <string name="main_page_top_middle_section_image4">Image 4</string>
 
+    <string name="image">Image</string>
+    <string name="title">Title</string>
 </resources>
