@@ -5,15 +5,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.facebook.share.Share;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -21,12 +25,15 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
+    public static final String EXTRA_TEXT = "com.example.application.EXTRA_TEXT";
 
     TextView createNewAccount;
     EditText inputEmail,inputPassword;
     Button btnLogin;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     ProgressDialog progressDialog;
+
+    CheckBox remember;
 
     FirebaseAuth mAuth;
     FirebaseUser mUser;
@@ -52,6 +59,7 @@ public class LoginActivity extends AppCompatActivity {
         btnFacebook=findViewById(R.id.btnFacebook);
         btnTwitter=findViewById(R.id.btnTwitter);
 
+        remember = findViewById(R.id.checkBox);
 
         createNewAccount.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -93,6 +101,35 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        SharedPreferences preferences = getSharedPreferences("checkbox", MODE_PRIVATE);
+        String checkbox = preferences.getString("remember", "");
+
+        if(checkbox.equals("true")){
+            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+            startActivity(intent);
+        }else if(checkbox.equals(false)){
+            Toast.makeText(this, "Please Sign In.", Toast.LENGTH_SHORT).show();
+        }
+
+        remember.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(compoundButton.isChecked()){
+                    SharedPreferences preferences = getSharedPreferences("checkbox", MODE_PRIVATE);
+                    SharedPreferences.Editor editor = preferences.edit();
+                    editor.putString("remember", "true");
+                    editor.apply();
+                    Toast.makeText(LoginActivity.this,"Checked", Toast.LENGTH_SHORT).show();
+                }else if(!compoundButton.isChecked()){
+                    SharedPreferences preferences = getSharedPreferences("checkbox", MODE_PRIVATE);
+                    SharedPreferences.Editor editor = preferences.edit();
+                    editor.putString("remember", "false");
+                    editor.apply();
+                    Toast.makeText(LoginActivity.this,"Unchecked", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 
     private void perforLogin() {
@@ -130,7 +167,14 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void sendUserToNextActivity() {
+        String text = inputEmail.getText().toString();
+
+
         Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+
+        intent.putExtra(EXTRA_TEXT, text);
+
+
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }

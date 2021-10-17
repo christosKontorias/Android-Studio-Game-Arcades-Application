@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -17,16 +19,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/dropdown_menu"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/ic_baseline_menu"
-            android:contentDescription="@string/navigation_drawer"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/imageView2432"
@@ -42,10 +34,10 @@
             app:srcCompat="@drawable/profile_picture" />
 
         <ImageView
-            android:contentDescription="@string/search_icon"
             android:id="@+id/imageView2"
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:contentDescription="@string/search_icon"
             app:layout_constraintBottom_toBottomOf="@+id/imageView2432"
             app:layout_constraintEnd_toStartOf="@+id/imageView2432"
             app:layout_constraintStart_toStartOf="parent"
@@ -53,10 +45,10 @@
             app:srcCompat="@drawable/search_icon" />
 
         <ImageView
-            android:contentDescription="@string/settings_icon"
-            android:id="@+id/imageView3"
+            android:id="@+id/setting_icon_btn"
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:contentDescription="@string/settings_icon"
             app:layout_constraintBottom_toBottomOf="@+id/imageView2432"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView2432"
@@ -76,7 +68,7 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView2432" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/emailtxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/email"

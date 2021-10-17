@@ -13,17 +13,28 @@
         <entry key="..\:/Users/KONTORIAS/Desktop/Android Studio Application/app/src/main/res/layout/activity_register.xml" value="0.20676691729323307" />
         <entry key="..\:/Users/KONTORIAS/Documents/GitHub/Android-Studio-Game-Arcades-Application/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22962962962962963" />
         <entry key="..\:/Users/KONTORIAS/Documents/GitHub/Android-Studio-Game-Arcades-Application/app/src/main/res/drawable/background_top.xml" value="0.23333333333333334" />
+        <entry key="..\:/Users/KONTORIAS/Documents/GitHub/Android-Studio-Game-Arcades-Application/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.17592592592592593" />
+        <entry key="..\:/Users/KONTORIAS/Documents/GitHub/Android-Studio-Game-Arcades-Application/app/src/main/res/drawable/ic_baseline_menu.xml" value="0.17592592592592593" />
+        <entry key="..\:/Users/KONTORIAS/Documents/GitHub/Android-Studio-Game-Arcades-Application/app/src/main/res/drawable/ic_baseline_security_24.xml" value="0.17592592592592593" />
         <entry key="..\:/Users/KONTORIAS/Documents/GitHub/Android-Studio-Game-Arcades-Application/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22962962962962963" />
+        <entry key="..\:/Users/KONTORIAS/Documents/GitHub/Android-Studio-Game-Arcades-Application/app/src/main/res/drawable/input_bg.xml" value="0.17592592592592593" />
+        <entry key="..\:/Users/KONTORIAS/Documents/GitHub/Android-Studio-Game-Arcades-Application/app/src/main/res/drawable/main_page_top_bar.xml" value="0.17592592592592593" />
+        <entry key="..\:/Users/KONTORIAS/Documents/GitHub/Android-Studio-Game-Arcades-Application/app/src/main/res/drawable/main_page_top_button.xml" value="0.17592592592592593" />
+        <entry key="..\:/Users/KONTORIAS/Documents/GitHub/Android-Studio-Game-Arcades-Application/app/src/main/res/drawable/main_page_top_button_white.xml" value="0.17592592592592593" />
         <entry key="..\:/Users/KONTORIAS/Documents/GitHub/Android-Studio-Game-Arcades-Application/app/src/main/res/drawable/mainpage_topbar.xml" value="0.22962962962962963" />
         <entry key="..\:/Users/KONTORIAS/Documents/GitHub/Android-Studio-Game-Arcades-Application/app/src/main/res/drawable/mainpage_topbutton.xml" value="0.22962962962962963" />
         <entry key="..\:/Users/KONTORIAS/Documents/GitHub/Android-Studio-Game-Arcades-Application/app/src/main/res/drawable/mainpage_topbutton_white.xml" value="0.22962962962962963" />
         <entry key="..\:/Users/KONTORIAS/Documents/GitHub/Android-Studio-Game-Arcades-Application/app/src/main/res/drawable/toolbar_header.xml" value="0.5646153846153846" />
         <entry key="..\:/Users/KONTORIAS/Documents/GitHub/Android-Studio-Game-Arcades-Application/app/src/main/res/layout/activity_facebook_log_in.xml" value="0.1" />
         <entry key="..\:/Users/KONTORIAS/Documents/GitHub/Android-Studio-Game-Arcades-Application/app/src/main/res/layout/activity_google_sign_in.xml" value="0.2793819655521783" />
-        <entry key="..\:/Users/KONTORIAS/Documents/GitHub/Android-Studio-Game-Arcades-Application/app/src/main/res/layout/activity_login.xml" value="0.5" />
-        <entry key="..\:/Users/KONTORIAS/Documents/GitHub/Android-Studio-Game-Arcades-Application/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/KONTORIAS/Documents/GitHub/Android-Studio-Game-Arcades-Application/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Users/KONTORIAS/Documents/GitHub/Android-Studio-Game-Arcades-Application/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/KONTORIAS/Documents/GitHub/Android-Studio-Game-Arcades-Application/app/src/main/res/layout/activity_register.xml" value="0.2793819655521783" />
+        <entry key="..\:/Users/KONTORIAS/Documents/GitHub/Android-Studio-Game-Arcades-Application/app/src/main/res/layout/activity_settings.xml" value="0.1838768115942029" />
         <entry key="..\:/Users/KONTORIAS/Documents/GitHub/Android-Studio-Game-Arcades-Application/app/src/main/res/layout/activity_twitter_sign_in.xml" value="0.2793819655521783" />
+        <entry key="..\:/Users/KONTORIAS/Documents/GitHub/Android-Studio-Game-Arcades-Application/app/src/main/res/layout/dashboard_fragment.xml" value="0.24592391304347827" />
+        <entry key="..\:/Users/KONTORIAS/Documents/GitHub/Android-Studio-Game-Arcades-Application/app/src/main/res/layout/drawer_menu.xml" value="0.24592391304347827" />
+        <entry key="..\:/Users/KONTORIAS/Documents/GitHub/Android-Studio-Game-Arcades-Application/app/src/main/res/layout/item_option.xml" value="0.24592391304347827" />
       </map>
     </option>
   </component>
